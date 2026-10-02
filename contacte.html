@@ -33,6 +33,22 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 @media (max-width:860px){.peu-in{grid-template-columns:1fr 1fr}.galetes{flex-direction:column;align-items:stretch}}
 @media (max-width:520px){.peu-in{grid-template-columns:1fr}}
 </style>
+<style>
+[id]{scroll-margin-top:96px}
+.degradat{background:linear-gradient(90deg,#6D28D9,#4F46E5 50%,#0EA5E9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cap{position:relative;isolation:isolate;overflow:hidden;background:#F7F6FD;border-bottom:1px solid #ECE8F6}
+.cap-fons{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.cap-fons .bola{position:absolute;border-radius:50%;filter:blur(70px)}
+.cap-fons .b1{left:-12%;top:-60%;width:560px;height:560px;background:rgba(167,139,250,.30)}
+.cap-fons .b2{right:-8%;top:-20%;width:460px;height:460px;background:rgba(125,211,252,.25)}
+.cap-fons .punts{position:absolute;inset:0;opacity:.05;background-image:radial-gradient(#6D28D9 1px,transparent 1px);background-size:28px 28px}
+.cap-in{max-width:1200px;margin:0 auto;padding:84px 24px 68px;display:flex;flex-direction:column;gap:20px}
+.cap-pastilla{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin:0;padding:8px 16px;border-radius:999px;border:1px solid #DDD3FB;background:rgba(255,255,255,.85);color:#5B21B6;font-size:14px;font-weight:600}
+.cap-pastilla i{width:8px;height:8px;border-radius:50%;background:#6D28D9}
+.cap h1{margin:0;max-width:920px;font-family:'Outfit',sans-serif;font-weight:700;font-size:clamp(40px,5vw,62px);line-height:1.02;letter-spacing:-.04em;color:#141127}
+.cap p.cap-sub{margin:0;max-width:720px;font-size:19px;line-height:1.6;color:#575271}
+.bloc-grad{background:linear-gradient(135deg,#6D28D9 0%,#4F46E5 55%,#0EA5E9 100%) !important}
+</style>
 </head>
 <body>
 <div style="min-height: 100vh; background: #FAFAFC; color: #1B1730; font-family: 'Public Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size: 18px; line-height: 1.55">
@@ -45,18 +61,22 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 <div style="display: flex; gap: 22px; flex-wrap: wrap; flex-grow: 1; font-size: 16px; font-weight: 500">
 <a href="funcionalitats.html" style="color: #1B1730; text-decoration: none">Funcionalitats</a>
 <a href="seguretat.html" style="color: #1B1730; text-decoration: none">Seguretat i dades</a>
-<a href="#com-funciona" style="color: #1B1730; text-decoration: none">Com comencem</a>
-<a href="#preu" style="color: #1B1730; text-decoration: none">Preu</a>
-<a href="#preguntes" style="color: #1B1730; text-decoration: none">Preguntes</a>
+<a href="/#com-funciona" style="color: #1B1730; text-decoration: none">Com comencem</a>
+<a href="/#preu" style="color: #1B1730; text-decoration: none">Preu</a>
+<a href="/#preguntes" style="color: #1B1730; text-decoration: none">Preguntes</a>
 </div>
 <a href="contacte.html" style="background: #6D28D9; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 12px 20px; border-radius: 10px">Demana una demostració</a>
 </nav>
 </header>
 <main>
-<section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 18px">
-<p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #6D28D9">Contacte</p>
-<h1 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 48px; line-height: 1.08; letter-spacing: -1.2px; max-width: 900px">Demaneu una demostració</h1>
-<p style="margin: 0; color: #575271; font-size: 20px; max-width: 760px">Expliqueu-nos quin és el vostre centre i com feu ara l'avaluació. Us respondrem per concertar una demostració.</p>
+<section class="cap" aria-labelledby="cap-titol">
+<div class="cap-fons" aria-hidden="true"><span class="bola b1"></span><span class="bola b2"></span><span class="punts"></span></div>
+<div class="cap-in">
+<p class="cap-pastilla"><i></i>Contacte</p>
+<h1 id="cap-titol">Demaneu una <span class="degradat">demostració</span></h1>
+<p class="cap-sub">Expliqueu-nos quin és el vostre centre i com feu ara l'avaluació. Us respondrem per concertar una demostració.</p>
+
+</div>
 </section><section style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: start">
 <form action="#" method="post" style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px" aria-label="Formulari de contacte">
 <label for="c-centre" style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px">Centre educatiu<input id="c-centre" name="centre" type="text" autocomplete="organization" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 17px; padding: 13px 14px; border: 1.5px solid #D9D4E8; border-radius: 10px; background: #FFFFFF; color: #1B1730"></label>
@@ -69,8 +89,8 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 <button type="submit" style="background: #6D28D9; color: #FFFFFF; border: none; font: inherit; font-weight: 700; font-size: 17px; padding: 15px 24px; border-radius: 12px; cursor: pointer">Envia la petició</button>
 </form>
 <div style="display: flex; flex-direction: column; gap: 22px">
-<article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Correu</h3><p style="margin: 0; color: #575271; font-size: 16px">[correu de contacte]</p></article>
-<article id="acces" style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Ja feu servir Notia?</h3><p style="margin: 0; color: #575271; font-size: 16px">Per a incidències o propostes de millora, escriviu-nos des del compte del vostre centre a [correu de suport]. Les dades d'accés us les dona el vostre centre, mai un tercer.</p></article>
+<article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Correu</h3><p style="margin: 0; color: #575271; font-size: 16px">desnvolupador@gmail.com</p></article>
+<article id="acces" style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Ja feu servir Notia?</h3><p style="margin: 0; color: #575271; font-size: 16px">Per a incidències o propostes de millora, escriviu-nos des del compte del vostre centre a desnvolupador@gmail.com. Les dades d'accés us les dona el vostre centre, mai un tercer.</p></article>
 <article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Temps de resposta</h3><p style="margin: 0; color: #575271; font-size: 16px">[Concretar el compromís de resposta.]</p></article>
 </div>
 </section>
@@ -85,18 +105,18 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 <h2>Informació</h2>
 <a href="funcionalitats.html">Funcionalitats</a>
 <a href="seguretat.html">Seguretat i dades</a>
-<a href="index.html#preu">Preu</a>
-<a href="index.html#preguntes">Preguntes freqüents</a>
+<a href="/#preu">Preu</a>
+<a href="/#preguntes">Preguntes freqüents</a>
 </nav>
 <nav class="peu-col" aria-label="Centres">
 <h2>Centres</h2>
 <a href="contacte.html">Demana una demostració</a>
-<a href="mailto:[correu de suport]">Incidències i suport</a>
+<a href="mailto:desnvolupador@gmail.com">Incidències i suport</a>
 <a href="contacte.html#acces">Accés al vostre centre</a>
 </nav>
 <div class="peu-col">
 <h2>Contacte</h2>
-<p><span class="peu-etiq">Correu</span><a href="mailto:[correu de contacte]">[correu de contacte]</a></p>
+<p><span class="peu-etiq">Correu</span><a href="mailto:desnvolupador@gmail.com">desnvolupador@gmail.com</a></p>
 <p><span class="peu-etiq">Web</span><a href="https://notia.cat">notia.cat</a></p>
 </div>
 </div>
