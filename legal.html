@@ -12,6 +12,27 @@ body{margin:0}
 a{color:#6D28D9}a:hover{color:#4C1D95}
 </style>
 <style>img{max-width:100%}*{box-sizing:border-box}html{scroll-behavior:smooth}</style>
+<style>
+.peu{background:#17142B;color:#CFC9EA;font-size:15px;margin-top:0}
+.peu a{color:#E4DEFA;text-decoration:none}.peu a:hover{color:#FFFFFF;text-decoration:underline}
+.peu-in{max-width:1200px;margin:0 auto;padding:56px 24px 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.peu-col{display:flex;flex-direction:column;gap:10px}
+.peu-col h2{margin:0 0 6px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#FFFFFF}
+.peu-col p{margin:0;line-height:1.6}
+.peu-logo{display:flex;align-items:center;gap:10px;font-family:'Outfit',sans-serif;font-weight:800;font-size:22px;color:#FFFFFF!important}
+.peu-etiq{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#9C95C2}
+.peu-baix{border-top:1px solid #2E2953;background:#110F22}
+.peu-baix-in{max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:14px;color:#A9A2CF}
+.peu-baix nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.peu-galetes{background:none;border:none;padding:0;font:inherit;color:#E4DEFA;cursor:pointer}
+.peu-galetes:hover{text-decoration:underline;color:#FFFFFF}
+.galetes{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:680px;margin:0 auto;display:flex;gap:16px;align-items:center;background:#FFFFFF;color:#1B1730;border:1px solid #E1DDEB;border-radius:16px;padding:16px 18px;box-shadow:0 20px 50px rgba(20,17,39,.18);font-size:15px}
+.galetes[hidden]{display:none}
+.galetes p{margin:0;flex:1;line-height:1.5}
+.galetes button{flex-shrink:0;background:#6D28D9;color:#FFFFFF;border:none;font:inherit;font-weight:700;padding:11px 18px;border-radius:10px;cursor:pointer}
+@media (max-width:860px){.peu-in{grid-template-columns:1fr 1fr}.galetes{flex-direction:column;align-items:stretch}}
+@media (max-width:520px){.peu-in{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div style="min-height: 100vh; background: #FAFAFC; color: #1B1730; font-family: 'Public Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size: 18px; line-height: 1.55">
@@ -32,39 +53,142 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 </nav>
 </header>
 <main>
-<section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 18px">
+<section style="max-width: 880px; margin: 0 auto; padding: 72px 24px 24px; display: flex; flex-direction: column; gap: 16px">
 <p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #6D28D9">Informació legal</p>
-<h1 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 48px; line-height: 1.08; letter-spacing: -1.2px; max-width: 900px">Avís legal, privacitat i condicions</h1>
-<p style="margin: 0; color: #575271; font-size: 20px; max-width: 760px">Textos pendents de redactar i validar per un professional abans de publicar la web.</p>
-</section><section id="avis" aria-labelledby="avis-t" style="max-width: 880px; margin: 0 auto; padding: 32px 24px; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #E7E4F0">
-<h2 id="avis-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.15; letter-spacing: -0.5px">Avís legal</h2>
-<p style="margin: 0; color: #575271">Titular del servei: [nom o raó social]. NIF: [NIF]. Domicili: [adreça]. Correu: [correu].</p><p style="margin: 0; color: #575271">[Condicions d'ús del lloc web i propietat intel·lectual.]</p>
-</section><section id="privacitat" aria-labelledby="privacitat-t" style="max-width: 880px; margin: 0 auto; padding: 32px 24px; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #E7E4F0">
-<h2 id="privacitat-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.15; letter-spacing: -0.5px">Política de privacitat</h2>
-<p style="margin: 0; color: #575271">Dades del formulari de contacte: [finalitat, base jurídica, conservació i drets].</p><p style="margin: 0; color: #575271">Dades de l'alumnat i del personal dels centres: el centre n'és el responsable i [titular del servei] n'és l'encarregat del tractament, segons el contracte d'encàrrec signat amb cada centre.</p><p style="margin: 0; color: #575271">Serveis de tercers i ubicació: [concretar].</p><p style="margin: 0; color: #575271">Exercici de drets: [com i on].</p>
-</section><section id="condicions" aria-labelledby="condicions-t" style="max-width: 880px; margin: 0 auto; padding: 32px 24px; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #E7E4F0">
-<h2 id="condicions-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.15; letter-spacing: -0.5px">Condicions del servei</h2>
-<p style="margin: 0; color: #575271">Objecte, durada i renovació anual del servei: [concretar].</p><p style="margin: 0; color: #575271">Suport i disponibilitat: [concretar].</p><p style="margin: 0; color: #575271">Finalització del servei i lliurament de les dades: [concretar].</p><p style="margin: 0; color: #575271">Limitació de responsabilitat: [concretar].</p>
-</section><section id="cookies" aria-labelledby="cookies-t" style="max-width: 880px; margin: 0 auto; padding: 32px 24px; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #E7E4F0">
-<h2 id="cookies-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.15; letter-spacing: -0.5px">Política de galetes</h2>
-<p style="margin: 0; color: #575271">[Indicar quines galetes fa servir el lloc web, si n'hi ha.]</p>
-</section><div style="height: 64px"></div>
+<h1 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 48px; line-height: 1.08; letter-spacing: -1.2px">Avís legal, privacitat, condicions i galetes</h1>
+<nav aria-label="Seccions" style="display: flex; flex-wrap: wrap; gap: 10px 20px; font-weight: 600">
+<a href="#avis">Avís legal</a><a href="#privacitat">Política de privacitat</a><a href="#condicions">Condicions del servei</a><a href="#galetes">Política de galetes</a>
+</nav>
+<p style="margin: 0; font-size: 15px; color: #6B6685">Darrera actualització: [data d'entrada en vigor]</p>
+</section><section id="avis" aria-labelledby="avis-t" style="max-width: 880px; margin: 0 auto; padding: 36px 24px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E7E4F0; scroll-margin-top: 90px">
+<h2 id="avis-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; line-height: 1.15; letter-spacing: -0.5px">Avís legal</h2>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">1. Dades identificatives</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">En compliment de l'article 10 de la Llei 34/2002, d'11 de juliol, de serveis de la societat de la informació i de comerç electrònic, s'informa que el titular d'aquest lloc web i del servei Notia és:</p>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Notiaweb SL</strong> · NIF: [NIF de Notiaweb SL] · Domicili: [adreça del domicili social] · Inscrita al Registre Mercantil de [Barcelona], tom [ ], foli [ ], full [ ] · Correu electrònic: <a href="mailto:[correu de contacte]">[correu de contacte]</a></p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">2. Objecte</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Aquest lloc web presenta Notia, una aplicació en línia per a centres educatius que permet preparar l'avaluació, els comentaris i els butlletins de l'alumnat, i facilita el contacte amb els centres interessats a contractar-la.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">3. Condicions d'ús del lloc web</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">L'accés a aquest lloc web és gratuït i implica l'acceptació d'aquest avís legal. La persona usuària es compromet a fer-ne un ús adequat, de bona fe i d'acord amb la legislació vigent, i a no utilitzar-lo per a activitats il·lícites o que puguin perjudicar el seu funcionament o els drets de tercers.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">L'accés a l'aplicació Notia és exclusiu per al personal i l'alumnat dels centres que l'han contractada. Les dades d'accés les facilita sempre el centre; desconfieu de qualsevol tercer que les ofereixi.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">4. Propietat intel·lectual i industrial</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Els continguts d'aquest lloc web i de l'aplicació Notia (textos, disseny, logotips, codi i la resta d'elements) són titularitat de Notiaweb SL o se n'utilitzen amb llicència. En queda prohibida la reproducció, distribució, comunicació pública o transformació sense autorització prèvia i per escrit, excepte el que permeti la llei.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">5. Responsabilitat</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Notiaweb SL treballa perquè la informació d'aquest lloc web sigui correcta i estigui actualitzada, però no garanteix l'absència d'errors ni la disponibilitat ininterrompuda del lloc. No es fa responsable dels danys derivats d'un ús inadequat del lloc web ni dels continguts d'altres llocs web als quals es pugui accedir mitjançant enllaços.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">6. Legislació aplicable</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Aquest avís legal es regeix per la legislació espanyola i de la Unió Europea. Per a qualsevol controvèrsia, les parts se sotmeten als jutjats i tribunals que corresponguin d'acord amb la normativa aplicable.</p>
+</section>
+<section id="privacitat" aria-labelledby="privacitat-t" style="max-width: 880px; margin: 0 auto; padding: 36px 24px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E7E4F0; scroll-margin-top: 90px">
+<h2 id="privacitat-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; line-height: 1.15; letter-spacing: -0.5px">Política de privacitat</h2>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">1. Responsable del tractament</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Per a les dades que es recullen mitjançant aquest lloc web (per exemple, el formulari de contacte), el responsable és <strong>Notiaweb SL</strong>, NIF [NIF de Notiaweb SL], [adreça del domicili social]. Contacte en matèria de protecció de dades: <a href="mailto:[correu de privacitat]">[correu de privacitat]</a>.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">2. Dades del formulari de contacte</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Quines dades:</strong> nom, càrrec, centre, correu electrònic, nombre aproximat d'alumnes i el missatge que ens envieu.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Finalitat:</strong> respondre la vostra consulta, organitzar una demostració i, si escau, preparar-vos un pressupost.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Base jurídica:</strong> el vostre consentiment i l'aplicació, a petició vostra, de mesures precontractuals.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Conservació:</strong> el temps necessari per atendre la consulta i, com a màxim, [termini] si no arriba a haver-hi contractació.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Destinataris:</strong> no es cedeixen dades a tercers, excepte els proveïdors que ens presten serveis tecnològics (allotjament web i, si escau, gestió de formularis), amb els quals tenim els contractes que exigeix la normativa.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">3. Dades tractades dins de l'aplicació Notia</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Quan un centre fa servir Notia, <strong>el centre és el responsable del tractament</strong> de les dades del seu alumnat i del seu personal, i Notiaweb SL actua com a <strong>encarregat del tractament</strong>, d'acord amb l'article 28 del Reglament General de Protecció de Dades i el contracte d'encàrrec que se signa amb cada centre.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">Notiaweb SL només tracta aquestes dades seguint les instruccions del centre i per prestar el servei. Les dades identificatives de l'alumnat (nom, cognoms, RALC i correus de les famílies) es xifren a l'ordinador del docent amb una clau que només té el centre, de manera que Notiaweb SL no les pot llegir.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7"><strong>Subencarregats:</strong> Google Ireland Limited (base de dades i autenticació, amb les dades allotjades a la Unió Europea), Vercel Inc. (allotjament de l'aplicació) i [proveïdor d'IA] (redacció d'esborranys, que rep els textos amb noms ficticis). [Concretar les garanties de les transferències internacionals.]</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">En finalitzar el servei, les dades es retornen al centre i se suprimeixen d'acord amb el contracte d'encàrrec.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">Les famílies i el personal que vulguin exercir els seus drets sobre aquestes dades s'han d'adreçar al seu centre educatiu.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">4. Els vostres drets</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Podeu exercir els drets d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat escrivint a <a href="mailto:[correu de privacitat]">[correu de privacitat]</a>, indicant el dret que voleu exercir.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">Si considereu que no s'han atès correctament els vostres drets, podeu presentar una reclamació a l'Autoritat Catalana de Protecció de Dades (apdcat.gencat.cat) o a l'autoritat que correspongui.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">5. Seguretat</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Notiaweb SL aplica mesures tècniques i organitzatives adequades al risc, entre les quals hi ha el xifratge de les dades identificatives amb una clau pròpia de cada centre, la separació de les dades de cada centre en entorns independents, l'accés restringit per rols i les còpies de seguretat xifrades.</p>
+</section>
+<section id="condicions" aria-labelledby="condicions-t" style="max-width: 880px; margin: 0 auto; padding: 36px 24px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E7E4F0; scroll-margin-top: 90px">
+<h2 id="condicions-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; line-height: 1.15; letter-spacing: -0.5px">Condicions del servei</h2>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">1. Objecte</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Aquestes condicions regulen la prestació del servei Notia per part de Notiaweb SL als centres educatius que el contracten.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">2. Contractació i durada</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">El servei es contracta per a cada centre i curs escolar, d'acord amb el pressupost acceptat. Es renova per cursos successius llevat que alguna de les parts ho comuniqui amb una antelació mínima de [termini].</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">3. Preu i facturació</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">El preu és el que consta en el pressupost acceptat i es factura [periodicitat]. [Concretar la forma de pagament.]</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">4. Què inclou el servei</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Un entorn propi per al centre, l'accés a totes les funcionalitats i actualitzacions, l'allotjament, les còpies de seguretat, l'ajuda de la intel·ligència artificial per redactar esborranys i el suport per correu electrònic en els termes indicats a la proposta.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">5. Obligacions del centre</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Fer un ús adequat del servei, gestionar els usuaris i els rols, custodiar la contrasenya del centre i el codi de recuperació de la clau de xifratge, i disposar de la base jurídica i informar les famílies del tractament de les dades, com a responsable del tractament.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">Si es perden alhora la contrasenya del centre i el codi de recuperació, les dades xifrades no es poden recuperar, ja que Notiaweb SL no té accés a la clau.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">6. Intel·ligència artificial</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Els textos que genera la intel·ligència artificial són esborranys. El docent els ha de revisar i és qui decideix el contingut final que arriba als documents oficials.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">7. Propietat intel·lectual</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">El centre obté un dret d'ús del servei, no exclusiu i limitat a la durada del contracte. Notiaweb SL conserva tots els drets sobre l'aplicació. Les dades introduïdes pel centre són sempre del centre.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">8. Finalització</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">En acabar el servei, Notiaweb SL lliurarà al centre una còpia de les seves dades en un format [format] i, un cop confirmada la recepció, les suprimirà dels seus sistemes en un termini de [termini].</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">9. Responsabilitat</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Notiaweb SL presta el servei amb la diligència professional deguda i es compromet a resoldre les incidències en el menor temps possible. [Concretar els límits de responsabilitat.]</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">10. Modificacions i llei aplicable</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Notiaweb SL pot actualitzar aquestes condicions i ho comunicarà als centres amb antelació. Es regeixen per la legislació espanyola.</p>
+</section>
+<section id="galetes" aria-labelledby="galetes-t" style="max-width: 880px; margin: 0 auto; padding: 36px 24px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E7E4F0; scroll-margin-top: 90px">
+<h2 id="galetes-t" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; line-height: 1.15; letter-spacing: -0.5px">Política de galetes</h2>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">1. Què són les galetes</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Les galetes (cookies) són petits fitxers que un lloc web desa al navegador per recordar informació sobre la visita.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">2. Galetes que fa servir aquest lloc web</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Aquest lloc web <strong>no fa servir galetes d'analítica, de publicitat ni de seguiment</strong>.</p>
+<p style="margin: 0; color: #474260; line-height: 1.7">Només desa al navegador una preferència tècnica per no tornar-vos a mostrar l'avís de galetes un cop l'heu llegit. És imprescindible per al funcionament del lloc i no requereix consentiment.</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">3. Serveis de tercers</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Per mostrar les tipografies, el lloc web carrega fonts de Google Fonts. Aquest servei no instal·la galetes, però el vostre navegador s'hi connecta i Google en pot rebre l'adreça IP. [Valorar allotjar les fonts al mateix servidor per evitar-ho.]</p>
+<h3 style="margin: 18px 0 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px">4. Com gestionar-les</h3>
+<p style="margin: 0; color: #474260; line-height: 1.7">Podeu consultar i esborrar les dades desades pel lloc web des de la configuració del vostre navegador. També podeu tornar a veure l'avís des de l'enllaç «Configuració de galetes» del peu de pàgina.</p>
+</section>
+<div style="height: 56px"></div>
 </main>
-<footer style="border-top: 1px solid #E7E4F0; background: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; font-size: 15px; color: #575271">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<strong style="font-family: 'Outfit', sans-serif; font-size: 20px; color: #1B1730">Notia</strong>
-<span>[correu de contacte]</span>
-<span>© [any] [titular del servei]</span>
+<footer class="peu">
+<div class="peu-in">
+<div class="peu-col peu-marca">
+<a href="index.html" class="peu-logo"><svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#8B5CF6"></rect><path d="M10 12h14M10 17h14M10 22h9" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"></path></svg>Notia</a>
+<p>Avaluació, comentaris i butlletins per a instituts, amb les dades de l'alumnat xifrades.</p>
 </div>
-<nav aria-label="Informació legal" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
+<nav class="peu-col" aria-label="Informació">
+<h2>Informació</h2>
+<a href="funcionalitats.html">Funcionalitats</a>
+<a href="seguretat.html">Seguretat i dades</a>
+<a href="index.html#preu">Preu</a>
+<a href="index.html#preguntes">Preguntes freqüents</a>
+</nav>
+<nav class="peu-col" aria-label="Centres">
+<h2>Centres</h2>
+<a href="contacte.html">Demana una demostració</a>
+<a href="mailto:[correu de suport]">Incidències i suport</a>
+<a href="contacte.html#acces">Accés al vostre centre</a>
+</nav>
+<div class="peu-col">
+<h2>Contacte</h2>
+<p><span class="peu-etiq">Correu</span><a href="mailto:[correu de contacte]">[correu de contacte]</a></p>
+<p><span class="peu-etiq">Web</span><a href="https://notia.cat">notia.cat</a></p>
+</div>
+</div>
+<div class="peu-baix">
+<div class="peu-baix-in">
+<span>Notia © 2026 · Tots els drets reservats · Notiaweb SL</span>
+<nav aria-label="Informació legal">
 <a href="legal.html#avis">Avís legal</a>
 <a href="legal.html#privacitat">Política de privacitat</a>
 <a href="legal.html#condicions">Condicions del servei</a>
-<a href="legal.html#cookies">Galetes</a>
+<a href="legal.html#galetes">Política de galetes</a>
+<button type="button" class="peu-galetes" onclick="notiaGaletes(true)">Configuració de galetes</button>
 </nav>
 </div>
+</div>
 </footer>
+<div class="galetes" id="avisGaletes" role="region" aria-label="Avís de galetes" hidden>
+<p>Aquest lloc web només fa servir les galetes tècniques imprescindibles perquè funcioni. No fem servir galetes d'analítica ni de publicitat. <a href="legal.html#galetes">Política de galetes</a></p>
+<button type="button" onclick="notiaGaletes(false)">D'acord</button>
+</div>
+<script>
+function notiaGaletes(mostra){
+  var el=document.getElementById('avisGaletes');
+  try{
+    if(mostra){el.hidden=false;return;}
+    if(mostra===false){localStorage.setItem('notia-galetes','vist');el.hidden=true;return;}
+  }catch(e){el.hidden=!mostra;}
+}
+(function(){try{if(!localStorage.getItem('notia-galetes'))document.getElementById('avisGaletes').hidden=false;}catch(e){document.getElementById('avisGaletes').hidden=false;}})();
+</script>
 </div>
 </body>
 </html>

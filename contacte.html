@@ -12,6 +12,27 @@ body{margin:0}
 a{color:#6D28D9}a:hover{color:#4C1D95}
 </style>
 <style>img{max-width:100%}*{box-sizing:border-box}html{scroll-behavior:smooth}</style>
+<style>
+.peu{background:#17142B;color:#CFC9EA;font-size:15px;margin-top:0}
+.peu a{color:#E4DEFA;text-decoration:none}.peu a:hover{color:#FFFFFF;text-decoration:underline}
+.peu-in{max-width:1200px;margin:0 auto;padding:56px 24px 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.peu-col{display:flex;flex-direction:column;gap:10px}
+.peu-col h2{margin:0 0 6px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#FFFFFF}
+.peu-col p{margin:0;line-height:1.6}
+.peu-logo{display:flex;align-items:center;gap:10px;font-family:'Outfit',sans-serif;font-weight:800;font-size:22px;color:#FFFFFF!important}
+.peu-etiq{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#9C95C2}
+.peu-baix{border-top:1px solid #2E2953;background:#110F22}
+.peu-baix-in{max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:14px;color:#A9A2CF}
+.peu-baix nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.peu-galetes{background:none;border:none;padding:0;font:inherit;color:#E4DEFA;cursor:pointer}
+.peu-galetes:hover{text-decoration:underline;color:#FFFFFF}
+.galetes{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:680px;margin:0 auto;display:flex;gap:16px;align-items:center;background:#FFFFFF;color:#1B1730;border:1px solid #E1DDEB;border-radius:16px;padding:16px 18px;box-shadow:0 20px 50px rgba(20,17,39,.18);font-size:15px}
+.galetes[hidden]{display:none}
+.galetes p{margin:0;flex:1;line-height:1.5}
+.galetes button{flex-shrink:0;background:#6D28D9;color:#FFFFFF;border:none;font:inherit;font-weight:700;padding:11px 18px;border-radius:10px;cursor:pointer}
+@media (max-width:860px){.peu-in{grid-template-columns:1fr 1fr}.galetes{flex-direction:column;align-items:stretch}}
+@media (max-width:520px){.peu-in{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div style="min-height: 100vh; background: #FAFAFC; color: #1B1730; font-family: 'Public Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size: 18px; line-height: 1.55">
@@ -49,26 +70,63 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 </form>
 <div style="display: flex; flex-direction: column; gap: 22px">
 <article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Correu</h3><p style="margin: 0; color: #575271; font-size: 16px">[correu de contacte]</p></article>
-<article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Ja feu servir Notia?</h3><p style="margin: 0; color: #575271; font-size: 16px">Per a incidències o propostes de millora, escriviu-nos des del compte del vostre centre a [correu de suport]. Les dades d'accés us les dona el vostre centre, mai un tercer.</p></article>
+<article id="acces" style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Ja feu servir Notia?</h3><p style="margin: 0; color: #575271; font-size: 16px">Per a incidències o propostes de millora, escriviu-nos des del compte del vostre centre a [correu de suport]. Les dades d'accés us les dona el vostre centre, mai un tercer.</p></article>
 <article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700">Temps de resposta</h3><p style="margin: 0; color: #575271; font-size: 16px">[Concretar el compromís de resposta.]</p></article>
 </div>
 </section>
 </main>
-<footer style="border-top: 1px solid #E7E4F0; background: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; font-size: 15px; color: #575271">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<strong style="font-family: 'Outfit', sans-serif; font-size: 20px; color: #1B1730">Notia</strong>
-<span>[correu de contacte]</span>
-<span>© [any] [titular del servei]</span>
+<footer class="peu">
+<div class="peu-in">
+<div class="peu-col peu-marca">
+<a href="index.html" class="peu-logo"><svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#8B5CF6"></rect><path d="M10 12h14M10 17h14M10 22h9" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"></path></svg>Notia</a>
+<p>Avaluació, comentaris i butlletins per a instituts, amb les dades de l'alumnat xifrades.</p>
 </div>
-<nav aria-label="Informació legal" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
+<nav class="peu-col" aria-label="Informació">
+<h2>Informació</h2>
+<a href="funcionalitats.html">Funcionalitats</a>
+<a href="seguretat.html">Seguretat i dades</a>
+<a href="index.html#preu">Preu</a>
+<a href="index.html#preguntes">Preguntes freqüents</a>
+</nav>
+<nav class="peu-col" aria-label="Centres">
+<h2>Centres</h2>
+<a href="contacte.html">Demana una demostració</a>
+<a href="mailto:[correu de suport]">Incidències i suport</a>
+<a href="contacte.html#acces">Accés al vostre centre</a>
+</nav>
+<div class="peu-col">
+<h2>Contacte</h2>
+<p><span class="peu-etiq">Correu</span><a href="mailto:[correu de contacte]">[correu de contacte]</a></p>
+<p><span class="peu-etiq">Web</span><a href="https://notia.cat">notia.cat</a></p>
+</div>
+</div>
+<div class="peu-baix">
+<div class="peu-baix-in">
+<span>Notia © 2026 · Tots els drets reservats · Notiaweb SL</span>
+<nav aria-label="Informació legal">
 <a href="legal.html#avis">Avís legal</a>
 <a href="legal.html#privacitat">Política de privacitat</a>
 <a href="legal.html#condicions">Condicions del servei</a>
-<a href="legal.html#cookies">Galetes</a>
+<a href="legal.html#galetes">Política de galetes</a>
+<button type="button" class="peu-galetes" onclick="notiaGaletes(true)">Configuració de galetes</button>
 </nav>
 </div>
+</div>
 </footer>
+<div class="galetes" id="avisGaletes" role="region" aria-label="Avís de galetes" hidden>
+<p>Aquest lloc web només fa servir les galetes tècniques imprescindibles perquè funcioni. No fem servir galetes d'analítica ni de publicitat. <a href="legal.html#galetes">Política de galetes</a></p>
+<button type="button" onclick="notiaGaletes(false)">D'acord</button>
+</div>
+<script>
+function notiaGaletes(mostra){
+  var el=document.getElementById('avisGaletes');
+  try{
+    if(mostra){el.hidden=false;return;}
+    if(mostra===false){localStorage.setItem('notia-galetes','vist');el.hidden=true;return;}
+  }catch(e){el.hidden=!mostra;}
+}
+(function(){try{if(!localStorage.getItem('notia-galetes'))document.getElementById('avisGaletes').hidden=false;}catch(e){document.getElementById('avisGaletes').hidden=false;}})();
+</script>
 </div>
 </body>
 </html>

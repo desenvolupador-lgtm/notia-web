@@ -12,6 +12,114 @@ body{margin:0}
 a{color:#6D28D9}a:hover{color:#4C1D95}
 </style>
 <style>img{max-width:100%}*{box-sizing:border-box}html{scroll-behavior:smooth}</style>
+
+<style>
+.hero{position:relative;isolation:isolate;overflow:hidden;background:#F7F6FD}
+.hero-fons{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.bola{position:absolute;border-radius:50%;filter:blur(70px)}
+.b1{left:-15%;top:-25%;width:600px;height:600px;background:rgba(167,139,250,.30)}
+.b2{right:-10%;top:10%;width:500px;height:500px;background:rgba(125,211,252,.25)}
+.punts{position:absolute;inset:0;opacity:.05;background-image:radial-gradient(#6D28D9 1px,transparent 1px);background-size:28px 28px}
+.hero-in{max-width:1200px;margin:0 auto;padding:88px 24px 104px;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;min-height:700px}
+.hero-pastilla{display:inline-flex;align-items:center;gap:8px;margin:0 0 26px;padding:8px 16px;border-radius:999px;border:1px solid #DDD3FB;background:rgba(255,255,255,.85);color:#5B21B6;font-size:14px;font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.ping{position:relative;width:8px;height:8px;display:inline-block}
+.ping span{position:absolute;inset:0;border-radius:50%;background:#6D28D9}
+.ping span:first-child{background:#A78BFA;animation:ping 1.6s cubic-bezier(0,0,.2,1) infinite}
+.hero-titol{margin:0;font-family:'Outfit',sans-serif;font-weight:700;font-size:clamp(44px,6vw,74px);line-height:.98;letter-spacing:-.045em;color:#141127}
+.degradat{background:linear-gradient(90deg,#6D28D9,#4F46E5 50%,#0EA5E9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{margin:26px 0 0;max-width:520px;font-size:19px;line-height:1.6;color:#575271}
+.hero-botons{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.btn-fosc,.btn-clar{display:inline-block;text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:12px;transition:transform .2s,background .2s,border-color .2s,color .2s}
+.btn-fosc{background:#141127;color:#fff;box-shadow:0 10px 24px rgba(20,17,39,.18)}
+.btn-fosc:hover{transform:translateY(-2px);background:#6D28D9;color:#fff}
+.btn-clar{background:#fff;color:#3B3654;border:1px solid #E1DDEB}
+.btn-clar:hover{transform:translateY(-2px);border-color:#C4B5FD;color:#5B21B6}
+.hero-checks{list-style:none;margin:36px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 24px;font-size:15px;color:#575271}
+.hero-checks li{display:flex;align-items:center;gap:6px}
+.hero-checks svg{width:18px;height:18px;fill:none;stroke:#6D28D9;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.hero-visual{position:relative;min-height:540px;display:flex;align-items:center;justify-content:center;perspective:1200px}
+.halo{position:absolute;width:390px;height:390px;border-radius:50%;background:rgba(139,92,246,.22);filter:blur(60px);animation:respira 6s ease-in-out infinite}
+.finestra{position:relative;z-index:1;width:100%;max-width:590px;background:#fff;border:1px solid #E5E1F0;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(30,20,80,.16);transition:transform .25s ease-out;animation:entra 1s cubic-bezier(.2,.8,.2,1) both .2s}
+.fin-barra{height:44px;display:flex;align-items:center;gap:8px;padding:0 16px;background:#F7F6FB;border-bottom:1px solid #EEEBF5}
+.fin-barra span{width:10px;height:10px;border-radius:50%;background:#F5A7A7}
+.fin-barra span:nth-child(2){background:#F8D77A}.fin-barra span:nth-child(3){background:#9EDDAE}
+.fin-barra i{margin:0 auto;width:240px;height:24px;border-radius:6px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.fin-cos{display:flex;min-height:440px}
+.fin-lateral{width:150px;padding:16px;background:#FAF9FD;border-right:1px solid #EEEBF5}
+.fin-logo{display:flex;align-items:center;gap:8px;margin-bottom:28px;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;color:#1B1730}
+.fin-logo span{width:30px;height:30px;border-radius:8px;background:#6D28D9;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}
+.fin-menu{padding:8px 12px;border-radius:8px;font-size:12px;color:#6B6685;margin-bottom:2px}
+.fin-menu.actiu{background:#EDE7FC;color:#5B21B6;font-weight:600}
+.fin-contingut{flex:1;padding:24px}
+.fin-cap{display:flex;justify-content:space-between;align-items:center}
+.fin-cap small{display:block;font-size:11px;color:#8C88A3}.fin-cap b{display:block;margin-top:2px;font-family:'Outfit',sans-serif;font-size:19px;color:#1B1730}
+.trimestre{padding:7px 12px;border-radius:8px;background:#F1ECFC;color:#5B21B6;font-size:11px;font-weight:600}
+.alumne{margin-top:22px;padding:16px;border:1px solid #EEEBF5;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:opacity .35s,transform .35s}
+.alumne.canvia{opacity:0;transform:translateX(10px)}
+.alumne-cap{display:flex;align-items:center;gap:12px}
+.alumne-cap b{display:block;font-size:14px;color:#1B1730}.alumne-cap small{font-size:11px;color:#8C88A3}
+.inicials{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:#E0E7FF;color:#3730A3}
+.estat{margin-left:auto;padding:4px 9px;border-radius:999px;background:#E8F7EF;color:#14794A;font-size:10px;font-weight:600}
+.alumne-com{margin-top:14px}
+.alumne-com-cap{display:flex;justify-content:space-between;font-size:11px;color:#6B6685;margin-bottom:8px}
+.alumne-com-cap .ia{color:#6D28D9;font-weight:600}
+.alumne-com p{margin:0;padding:12px;border-radius:12px;background:#F7F6FB;font-size:12.5px;line-height:1.55;color:#4A4563}
+.items{margin-top:14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.items div{padding:12px;border:1px solid #EEEBF5;border-radius:12px}
+.items small{display:block;font-size:10.5px;color:#8C88A3}.items b{display:block;margin-top:3px;font-size:12.5px;color:#3B3654}
+.flota{position:absolute;z-index:2;background:rgba(255,255,255,.93);border:1px solid #fff;border-radius:18px;padding:16px;box-shadow:0 18px 40px rgba(30,20,80,.12)}
+.flota-1{left:-8px;top:54px;width:230px;animation:sura1 5s ease-in-out infinite}
+.flota-2{right:-8px;bottom:76px;width:210px;animation:sura2 6s ease-in-out infinite}
+.flota-cap{display:flex;align-items:center;gap:10px}
+.flota-cap b{display:block;font-size:12.5px;color:#1B1730}.flota-cap small{font-size:11px;color:#8C88A3}
+.ico{width:36px;height:36px;border-radius:10px;background:#EDE7FC;display:flex;align-items:center;justify-content:center}
+.ico svg{width:18px;height:18px;fill:none;stroke:#6D28D9;stroke-width:2;stroke-linecap:round}
+.flota-text{margin:12px 0 0;padding:10px;border-radius:10px;background:#F7F6FB;font-size:11.5px;line-height:1.5;color:#575271}
+.flota-fila{display:flex;justify-content:space-between;align-items:center;font-size:12.5px}
+.etiqueta-ok{padding:4px 9px;border-radius:999px;background:#E8F7EF;color:#14794A;font-size:10.5px;font-weight:600}
+.barres{margin-top:16px;display:flex;flex-direction:column;gap:8px}
+.barra{display:block;height:8px;border-radius:99px;background:#EFEDF5;overflow:hidden}
+.barra i{display:block;height:100%;border-radius:99px;background:#6D28D9}
+.pastilla-func{position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:3;display:flex;align-items:center;gap:12px;white-space:nowrap;padding:9px 18px 9px 10px;border-radius:999px;background:rgba(255,255,255,.95);border:1px solid #fff;box-shadow:0 12px 30px rgba(30,20,80,.14);transition:opacity .35s,transform .35s}
+.pastilla-func.canvia{opacity:0;transform:translate(-50%,8px)}
+.pastilla-func small{display:block;font-size:10.5px;color:#8C88A3}.pastilla-func b{display:block;font-size:13px;color:#1B1730}
+.pf-ico{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.pf-ico svg{width:15px;height:15px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.indicadors{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.indicadors button{width:8px;height:8px;padding:0;border:none;border-radius:99px;background:#CFCBDD;cursor:pointer;transition:width .3s,background .3s}
+.indicadors button[aria-current="true"]{width:32px;background:#6D28D9}
+@keyframes ping{75%,100%{transform:scale(2.2);opacity:0}}
+@keyframes respira{0%,100%{transform:scale(1);opacity:.35}50%{transform:scale(1.08);opacity:.5}}
+@keyframes sura1{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(1deg)}}
+@keyframes sura2{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(10px) rotate(-1deg)}}
+@keyframes entra{from{opacity:0;transform:translateY(40px) scale(.94)}to{opacity:1;transform:none}}
+.hero-text>*{animation:puja .7s ease both}
+.hero-text>*:nth-child(2){animation-delay:.1s}.hero-text>*:nth-child(3){animation-delay:.25s}.hero-text>*:nth-child(4){animation-delay:.35s}.hero-text>*:nth-child(5){animation-delay:.5s}
+@keyframes puja{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media (max-width:960px){.hero-in{grid-template-columns:1fr;padding-top:56px}.flota{display:none}.hero-visual{min-height:0;padding-bottom:64px}.fin-lateral{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<style>
+.peu{background:#17142B;color:#CFC9EA;font-size:15px;margin-top:0}
+.peu a{color:#E4DEFA;text-decoration:none}.peu a:hover{color:#FFFFFF;text-decoration:underline}
+.peu-in{max-width:1200px;margin:0 auto;padding:56px 24px 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.peu-col{display:flex;flex-direction:column;gap:10px}
+.peu-col h2{margin:0 0 6px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#FFFFFF}
+.peu-col p{margin:0;line-height:1.6}
+.peu-logo{display:flex;align-items:center;gap:10px;font-family:'Outfit',sans-serif;font-weight:800;font-size:22px;color:#FFFFFF!important}
+.peu-etiq{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#9C95C2}
+.peu-baix{border-top:1px solid #2E2953;background:#110F22}
+.peu-baix-in{max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:14px;color:#A9A2CF}
+.peu-baix nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.peu-galetes{background:none;border:none;padding:0;font:inherit;color:#E4DEFA;cursor:pointer}
+.peu-galetes:hover{text-decoration:underline;color:#FFFFFF}
+.galetes{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:680px;margin:0 auto;display:flex;gap:16px;align-items:center;background:#FFFFFF;color:#1B1730;border:1px solid #E1DDEB;border-radius:16px;padding:16px 18px;box-shadow:0 20px 50px rgba(20,17,39,.18);font-size:15px}
+.galetes[hidden]{display:none}
+.galetes p{margin:0;flex:1;line-height:1.5}
+.galetes button{flex-shrink:0;background:#6D28D9;color:#FFFFFF;border:none;font:inherit;font-weight:700;padding:11px 18px;border-radius:10px;cursor:pointer}
+@media (max-width:860px){.peu-in{grid-template-columns:1fr 1fr}.galetes{flex-direction:column;align-items:stretch}}
+@media (max-width:520px){.peu-in{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div style="min-height: 100vh; background: #FAFAFC; color: #1B1730; font-family: 'Public Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size: 18px; line-height: 1.55">
@@ -34,25 +142,57 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 </header>
 
 <main>
-<section aria-labelledby="titol" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #6D28D9">Avaluació, comentaris i butlletins per a instituts</p>
-<h1 id="titol" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 56px; line-height: 1.05; letter-spacing: -1.5px">L'avaluació del vostre centre, en un sol lloc i amb les dades de l'alumnat protegides.</h1>
-<p style="margin: 0; font-size: 20px; color: #575271; max-width: 560px">Notia acompanya el professorat des del primer comentari fins al butlletí final, i coordina tutoria, secretaria i junta d'avaluació en una mateixa eina web.</p>
-<div style="display: flex; gap: 14px; flex-wrap: wrap">
-<a href="contacte.html" style="background: #6D28D9; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px">Demana una demostració</a>
-<a href="seguretat.html" style="background: #FFFFFF; color: #1B1730; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px; border: 1.5px solid #D9D4E8">Com protegim les dades</a>
+<section class="hero" id="hero" aria-labelledby="titol">
+<div class="hero-fons" aria-hidden="true"><span class="bola b1"></span><span class="bola b2"></span><span class="punts"></span></div>
+<div class="hero-in">
+<div class="hero-text">
+<p class="hero-pastilla"><span class="ping"><span></span><span></span></span>Avaluació més senzilla per al vostre centre</p>
+<h1 id="titol" class="hero-titol">Menys temps<br><span class="degradat">redactant.</span><br>Més temps per a l'alumnat.</h1>
+<p class="hero-sub">Notia acompanya el professorat des del primer comentari fins al butlletí final i coordina tot el centre en una mateixa eina, amb les dades de l'alumnat xifrades.</p>
+<div class="hero-botons">
+<a class="btn-fosc" href="contacte.html">Demana una demostració</a>
+<a class="btn-clar" href="funcionalitats.html">Com funciona</a>
+</div>
+<ul class="hero-checks">
+<li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7"></path></svg>Sense instal·lacions</li>
+<li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7"></path></svg>Dades a la UE</li>
+<li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7"></path></svg>Amb el Google del centre</li>
+</ul>
+</div>
+
+<div class="hero-visual" aria-hidden="true">
+<div class="halo"></div>
+<div class="flota flota-1">
+<div class="flota-cap"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 11h16M4 16h10"></path></svg></span><div><b>Comentari</b><small>Esborrany amb ajuda de la IA</small></div></div>
+<p class="flota-text">«Mostra una evolució molt positiva…»</p>
+</div>
+<div class="flota flota-2">
+<div class="flota-fila"><b>Butlletí</b><span class="etiqueta-ok">Preparat</span></div>
+<div class="barres"><span class="barra"><i style="width:82%"></i></span><span class="barra" style="width:70%"></span><span class="barra" style="width:88%"></span></div>
+</div>
+
+<div class="finestra" id="finestra">
+<div class="fin-barra"><span></span><span></span><span></span><i></i></div>
+<div class="fin-cos">
+<div class="fin-lateral">
+<div class="fin-logo"><span>N</span>Notia</div>
+<div class="fin-menu actiu">Els meus grups</div><div class="fin-menu">Alumnes</div><div class="fin-menu">Avaluació</div><div class="fin-menu">Butlletins</div>
+</div>
+<div class="fin-contingut">
+<div class="fin-cap"><div><small>3r ESO A</small><b>Avaluació</b></div><span class="trimestre">2n trimestre</span></div>
+<div class="alumne" id="alumneTarg">
+<div class="alumne-cap"><span class="inicials" id="alInicials">LG</span><div><b id="alNom">Laia Garcia</b><small>3r ESO A · Ciències</small></div><span class="estat">En progrés</span></div>
+<div class="alumne-com"><div class="alumne-com-cap"><span>Comentari</span><span class="ia">Suggeriment IA</span></div><p id="alComentari">Mostra una evolució molt positiva i participa activament en les activitats.</p></div>
+</div>
+<div class="items"><div><small>Participació</small><b>Assolit</b></div><div><small>Treball</small><b>Notable</b></div><div><small>Autonomia</small><b>Assolit</b></div><div><small>Progrés</small><b>Molt bé</b></div></div>
 </div>
 </div>
-<figure style="margin: 0; background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 18px; padding: 10px; box-shadow: 0 24px 60px rgba(27,23,48,0.10)">
-<div style="display: flex; gap: 6px; padding: 6px 8px 12px">
-<span style="width: 10px; height: 10px; border-radius: 5px; background: #E7E4F0"></span>
-<span style="width: 10px; height: 10px; border-radius: 5px; background: #E7E4F0"></span>
-<span style="width: 10px; height: 10px; border-radius: 5px; background: #E7E4F0"></span>
 </div>
-<img src="img/classe.png" alt="Pantalla de Notia: llista d'alumnes d'un grup i panell de comentaris" style="width: 100%; height: auto; display: block; border-radius: 10px">
-<figcaption style="font-size: 13px; color: #6B6685; padding: 10px 6px 2px">Vista d'un grup amb alumnes ficticis.</figcaption>
-</figure>
+
+<div class="pastilla-func" id="pastilla"><span class="pf-ico" id="pfIco"></span><div><small id="pfEtiq">Comentaris</small><b id="pfTitol">Comentaris per ítems</b></div></div>
+</div>
+</div>
+<div class="indicadors" id="indicadors" role="group" aria-label="Funcionalitats destacades"></div>
 </section>
 
 <section aria-label="Origen" style="border-top: 1px solid #E7E4F0; border-bottom: 1px solid #E7E4F0; background: #FFFFFF">
@@ -225,21 +365,92 @@ a{color:#6D28D9}a:hover{color:#4C1D95}
 </section>
 </main>
 
-<footer style="border-top: 1px solid #E7E4F0; background: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; font-size: 15px; color: #575271">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<strong style="font-family: 'Outfit', sans-serif; font-size: 20px; color: #1B1730">Notia</strong>
-<span>[correu de contacte]</span>
-<span>© [any] [titular del servei]</span>
+<footer class="peu">
+<div class="peu-in">
+<div class="peu-col peu-marca">
+<a href="index.html" class="peu-logo"><svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#8B5CF6"></rect><path d="M10 12h14M10 17h14M10 22h9" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"></path></svg>Notia</a>
+<p>Avaluació, comentaris i butlletins per a instituts, amb les dades de l'alumnat xifrades.</p>
 </div>
-<nav aria-label="Informació legal" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
+<nav class="peu-col" aria-label="Informació">
+<h2>Informació</h2>
+<a href="funcionalitats.html">Funcionalitats</a>
+<a href="seguretat.html">Seguretat i dades</a>
+<a href="index.html#preu">Preu</a>
+<a href="index.html#preguntes">Preguntes freqüents</a>
+</nav>
+<nav class="peu-col" aria-label="Centres">
+<h2>Centres</h2>
+<a href="contacte.html">Demana una demostració</a>
+<a href="mailto:[correu de suport]">Incidències i suport</a>
+<a href="contacte.html#acces">Accés al vostre centre</a>
+</nav>
+<div class="peu-col">
+<h2>Contacte</h2>
+<p><span class="peu-etiq">Correu</span><a href="mailto:[correu de contacte]">[correu de contacte]</a></p>
+<p><span class="peu-etiq">Web</span><a href="https://notia.cat">notia.cat</a></p>
+</div>
+</div>
+<div class="peu-baix">
+<div class="peu-baix-in">
+<span>Notia © 2026 · Tots els drets reservats · Notiaweb SL</span>
+<nav aria-label="Informació legal">
 <a href="legal.html#avis">Avís legal</a>
 <a href="legal.html#privacitat">Política de privacitat</a>
 <a href="legal.html#condicions">Condicions del servei</a>
-<a href="legal.html#cookies">Galetes</a>
+<a href="legal.html#galetes">Política de galetes</a>
+<button type="button" class="peu-galetes" onclick="notiaGaletes(true)">Configuració de galetes</button>
 </nav>
 </div>
-</footer>
 </div>
+</footer>
+<div class="galetes" id="avisGaletes" role="region" aria-label="Avís de galetes" hidden>
+<p>Aquest lloc web només fa servir les galetes tècniques imprescindibles perquè funcioni. No fem servir galetes d'analítica ni de publicitat. <a href="legal.html#galetes">Política de galetes</a></p>
+<button type="button" onclick="notiaGaletes(false)">D'acord</button>
+</div>
+<script>
+function notiaGaletes(mostra){
+  var el=document.getElementById('avisGaletes');
+  try{
+    if(mostra){el.hidden=false;return;}
+    if(mostra===false){localStorage.setItem('notia-galetes','vist');el.hidden=true;return;}
+  }catch(e){el.hidden=!mostra;}
+}
+(function(){try{if(!localStorage.getItem('notia-galetes'))document.getElementById('avisGaletes').hidden=false;}catch(e){document.getElementById('avisGaletes').hidden=false;}})();
+</script>
+</div>
+<script>
+(function(){
+  var slides=[
+    {e:'Comentaris',t:'Comentaris per ítems',c:'linear-gradient(135deg,#6D28D9,#4F46E5)',i:'<svg viewBox="0 0 24 24"><path d="M4 6h16M4 11h16M4 16h10"/></svg>'},
+    {e:'Avaluació',t:'Tot el grup sota control',c:'linear-gradient(135deg,#4F46E5,#0EA5E9)',i:'<svg viewBox="0 0 24 24"><path d="M5 12.5l4 4 10-10"/></svg>'},
+    {e:'Butlletins',t:'El butlletí es genera sol',c:'linear-gradient(135deg,#0EA5E9,#14B8A6)',i:'<svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4"/></svg>'},
+    {e:'Intel·ligència artificial',t:'Una ajuda, no un substitut',c:'linear-gradient(135deg,#C026D3,#6D28D9)',i:'<svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>'}
+  ];
+  var alumnes=[
+    {n:'Laia Garcia',i:'LG',f:'#E0E7FF',t:'#3730A3',c:"Mostra una evolució molt positiva i participa activament en les activitats."},
+    {n:'Arnau Soler',i:'AS',f:'#EDE7FC',t:'#5B21B6',c:"Ha millorat la seva autonomia i manté una actitud molt positiva."},
+    {n:'Júlia Martínez',i:'JM',f:'#E0F2FE',t:'#075985',c:"Treballa de manera constant i ha assolit els objectius del trimestre."}
+  ];
+  var s=0,a=0,ind=document.getElementById('indicadors'),past=document.getElementById('pastilla'),targ=document.getElementById('alumneTarg');
+  slides.forEach(function(x,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Funcionalitat: '+x.t);b.onclick=function(){mostra(k);reinicia();};ind.appendChild(b);});
+  function mostra(k){
+    s=k;past.classList.add('canvia');
+    setTimeout(function(){var x=slides[s];document.getElementById('pfEtiq').textContent=x.e;document.getElementById('pfTitol').textContent=x.t;var ic=document.getElementById('pfIco');ic.innerHTML=x.i;ic.style.background=x.c;past.classList.remove('canvia');},200);
+    [].forEach.call(ind.children,function(b,j){b.setAttribute('aria-current',j===s?'true':'false');});
+  }
+  function alumne(){
+    a=(a+1)%alumnes.length;var x=alumnes[a];targ.classList.add('canvia');
+    setTimeout(function(){document.getElementById('alNom').textContent=x.n;var ini=document.getElementById('alInicials');ini.textContent=x.i;ini.style.background=x.f;ini.style.color=x.t;document.getElementById('alComentari').textContent=x.c;targ.classList.remove('canvia');},250);
+  }
+  var tmp;function reinicia(){clearInterval(tmp);tmp=setInterval(function(){mostra((s+1)%slides.length);alumne();},4500);}
+  mostra(0);reinicia();
+  // inclinació suau seguint el ratolí
+  var hero=document.getElementById('hero'),fin=document.getElementById('finestra');
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    hero.addEventListener('mousemove',function(e){var r=hero.getBoundingClientRect();var x=((e.clientX-r.left)/r.width-.5)*8,y=((e.clientY-r.top)/r.height-.5)*-8;fin.style.transform='rotateX('+y+'deg) rotateY('+x+'deg)';});
+    hero.addEventListener('mouseleave',function(){fin.style.transform='';});
+  }
+})();
+</script>
 </body>
 </html>
