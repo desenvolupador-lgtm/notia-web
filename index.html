@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notia · Avaluació, comentaris i butlletins per a instituts</title>
+<meta name="description" content="Notia és una aplicació web per preparar l'avaluació, els comentaris i els butlletins dels instituts, amb les dades de l'alumnat xifrades.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 34 34%22%3E%3Crect width=%2234%22 height=%2234%22 rx=%229%22 fill=%22%236D28D9%22/%3E%3Cpath d=%22M10 12h14M10 17h14M10 22h9%22 stroke=%22white%22 stroke-width=%222.4%22 stroke-linecap=%22round%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Public+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#6D28D9}a:hover{color:#4C1D95}
+</style>
+<style>img{max-width:100%}*{box-sizing:border-box}html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #FAFAFC; color: #1B1730; font-family: 'Public Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(250,250,252,0.94); border-bottom: 1px solid #E7E4F0">
+<nav aria-label="Navegació principal" style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1B1730">
+<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#6D28D9"></rect><path d="M10 12h14M10 17h14M10 22h9" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"></path></svg>
+<span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.5px">Notia</span>
+</a>
+<div style="display: flex; gap: 22px; flex-wrap: wrap; flex-grow: 1; font-size: 16px; font-weight: 500">
+<a href="funcionalitats.html" style="color: #1B1730; text-decoration: none">Funcionalitats</a>
+<a href="seguretat.html" style="color: #1B1730; text-decoration: none">Seguretat i dades</a>
+<a href="#com-funciona" style="color: #1B1730; text-decoration: none">Com comencem</a>
+<a href="#preu" style="color: #1B1730; text-decoration: none">Preu</a>
+<a href="#preguntes" style="color: #1B1730; text-decoration: none">Preguntes</a>
+</div>
+<a href="contacte.html" style="background: #6D28D9; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 12px 20px; border-radius: 10px">Demana una demostració</a>
+</nav>
+</header>
+
+<main>
+<section aria-labelledby="titol" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #6D28D9">Avaluació, comentaris i butlletins per a instituts</p>
+<h1 id="titol" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 56px; line-height: 1.05; letter-spacing: -1.5px">L'avaluació del vostre centre, en un sol lloc i amb les dades de l'alumnat protegides.</h1>
+<p style="margin: 0; font-size: 20px; color: #575271; max-width: 560px">Notia acompanya el professorat des del primer comentari fins al butlletí final, i coordina tutoria, secretaria i junta d'avaluació en una mateixa eina web.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<a href="contacte.html" style="background: #6D28D9; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px">Demana una demostració</a>
+<a href="seguretat.html" style="background: #FFFFFF; color: #1B1730; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px; border: 1.5px solid #D9D4E8">Com protegim les dades</a>
+</div>
+</div>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 18px; padding: 10px; box-shadow: 0 24px 60px rgba(27,23,48,0.10)">
+<div style="display: flex; gap: 6px; padding: 6px 8px 12px">
+<span style="width: 10px; height: 10px; border-radius: 5px; background: #E7E4F0"></span>
+<span style="width: 10px; height: 10px; border-radius: 5px; background: #E7E4F0"></span>
+<span style="width: 10px; height: 10px; border-radius: 5px; background: #E7E4F0"></span>
+</div>
+<img src="img/classe.png" alt="Pantalla de Notia: llista d'alumnes d'un grup i panell de comentaris" style="width: 100%; height: auto; display: block; border-radius: 10px">
+<figcaption style="font-size: 13px; color: #6B6685; padding: 10px 6px 2px">Vista d'un grup amb alumnes ficticis.</figcaption>
+</figure>
+</section>
+
+<section aria-label="Origen" style="border-top: 1px solid #E7E4F0; border-bottom: 1px solid #E7E4F0; background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 26px 24px; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; font-size: 16px; color: #575271">
+<span>Creat per un docent, a partir de la feina real d'un claustre.</span>
+<span>S'hi entra amb el compte de Google del centre.</span>
+<span>Dades allotjades a la Unió Europea.</span>
+</div>
+</section>
+
+<section aria-labelledby="resol" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="max-width: 760px; display: flex; flex-direction: column; gap: 14px">
+<h2 id="resol" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; letter-spacing: -0.8px">Menys hores redactant, més temps per a l'alumnat</h2>
+<p style="margin: 0; color: #575271">Cada trimestre, els claustres dediquen moltes hores a escriure comentaris i muntar butlletins. Notia en simplifica les parts repetitives sense treure el criteri al docent.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
+<article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#F1ECFC"></rect><path d="M12 14h16M12 20h16M12 26h10" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700">Comentaris per ítems</h3>
+<p style="margin: 0; color: #575271; font-size: 17px">Plantilles compartides per matèria i ajuda de la intel·ligència artificial per redactar un primer esborrany, que el docent sempre revisa i fa seu.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#F1ECFC"></rect><path d="M14 11h9l5 5v13H14z" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"></path><path d="M17 21l3 3 5-6" stroke="#6D28D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700">Butlletins sense errors de còpia</h3>
+<p style="margin: 0; color: #575271; font-size: 17px">Els butlletins es generen a partir de l'avaluació ja introduïda. El docent avalua i comenta; Notia s'encarrega de muntar el document.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#F1ECFC"></rect><circle cx="16" cy="17" r="4" stroke="#6D28D9" stroke-width="2"></circle><circle cx="26" cy="17" r="4" stroke="#6D28D9" stroke-width="2"></circle><path d="M10 29c1-4 4-6 6-6s5 2 6 6M20 29c1-4 4-6 6-6s5 2 6 6" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700">Tot el centre coordinat</h3>
+<p style="margin: 0; color: #575271; font-size: 17px">Secretaria organitza grups i matèries, la tutoria segueix el seu grup i la junta d'avaluació té les actes preparades. Cada perfil veu el que necessita.</p>
+</article>
+</div>
+</section>
+
+<section aria-labelledby="perfils" style="background: #FFFFFF; border-top: 1px solid #E7E4F0; border-bottom: 1px solid #E7E4F0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<h2 id="perfils" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; letter-spacing: -0.8px">Una eina, cada perfil al seu lloc</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 17px">
+<li><strong>Professorat.</strong> <span style="color: #575271">Comentaris i avaluació per matèria i per ítems.</span></li>
+<li><strong>Tutoria.</strong> <span style="color: #575271">Comentari de tutoria, seguiment del grup i cotutoria.</span></li>
+<li><strong>Secretaria.</strong> <span style="color: #575271">Nivells, grups, matèries, usuaris, períodes i butlletins.</span></li>
+<li><strong>Junta d'avaluació.</strong> <span style="color: #575271">Actes i acords de cada sessió.</span></li>
+<li><strong>Psicopedagogia.</strong> <span style="color: #575271">Plans de suport individualitzat, amb les mesures visibles per al professorat.</span></li>
+<li><strong>Alumnat.</strong> <span style="color: #575271">Autoavaluació amb el seu compte del centre.</span></li>
+</ul>
+<a href="funcionalitats.html" style="font-weight: 600">Veure totes les funcionalitats</a>
+</div>
+<figure style="margin: 0; background: #FAFAFC; border: 1px solid #E7E4F0; border-radius: 18px; padding: 10px">
+<img src="img/secretaria.png" alt="Secretaria a Notia: nivells, grups, matèries i llista d'alumnes" style="width: 100%; height: auto; display: block; border-radius: 10px">
+<figcaption style="font-size: 13px; color: #6B6685; padding: 10px 6px 2px">Secretaria organitza l'estructura del centre.</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="seguretat" aria-labelledby="dades" style="background: #17142B; color: #F4F2FB">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="max-width: 820px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #C4B5FD">Protecció de dades des del disseny</p>
+<h2 id="dades" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.08; letter-spacing: -0.8px">Ni tan sols nosaltres podem llegir les dades del vostre alumnat.</h2>
+<p style="margin: 0; color: #CFC9EA; font-size: 19px">Els noms, els RALC i els correus de les famílies es xifren a l'ordinador del docent, amb una clau que només té el vostre centre, abans d'arribar a cap servidor.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<div style="border: 1px solid #3A3466; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 700">Clau pròpia de cada centre</h3>
+<p style="margin: 0; color: #CFC9EA; font-size: 16px">Cada institut crea la seva clau. El proveïdor no la té i no la pot recuperar.</p>
+</div>
+<div style="border: 1px solid #3A3466; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 700">IA amb noms ficticis</h3>
+<p style="margin: 0; color: #CFC9EA; font-size: 16px">El servei d'IA mai no rep el nom real de l'alumne ni el seu RALC.</p>
+</div>
+<div style="border: 1px solid #3A3466; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 700">Un entorn per centre</h3>
+<p style="margin: 0; color: #CFC9EA; font-size: 16px">Cada institut té la seva pròpia base de dades, separada de la resta.</p>
+</div>
+</div>
+<a href="seguretat.html" style="color: #C4B5FD; font-weight: 600; align-self: flex-start">Com funciona la seguretat de Notia</a>
+</div>
+</section>
+
+<section aria-labelledby="alumnat" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center">
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #E7E4F0; border-radius: 18px; padding: 10px; max-width: 520px">
+<img src="img/autoavaluacio.png" alt="Pantalla d'autoavaluació d'un alumne a Notia" style="width: 100%; height: auto; display: block; border-radius: 10px">
+</figure>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h2 id="alumnat" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; letter-spacing: -0.8px">L'alumnat també hi té veu</h2>
+<p style="margin: 0; color: #575271">Els alumnes responen la seva autoavaluació amb el compte del centre. El tutor o tutora en revisa les respostes i les incorpora al butlletí com a comentari de l'alumne.</p>
+</div>
+</section>
+
+<section id="com-funciona" aria-labelledby="comencem" style="background: #F1ECFC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<h2 id="comencem" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; letter-spacing: -0.8px">Com comencem a treballar amb el vostre centre</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px">
+<li style="background: #FFFFFF; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 34px; color: #6D28D9">1</span>
+<strong style="font-size: 19px">Demostració</strong>
+<span style="color: #575271; font-size: 16px">Us ensenyem Notia en una videotrucada, amb dades fictícies.</span>
+</li>
+<li style="background: #FFFFFF; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 34px; color: #6D28D9">2</span>
+<strong style="font-size: 19px">El vostre entorn</strong>
+<span style="color: #575271; font-size: 16px">Preparem l'espai propi del centre, amb el vostre domini de correu i la vostra imatge.</span>
+</li>
+<li style="background: #FFFFFF; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 34px; color: #6D28D9">3</span>
+<strong style="font-size: 19px">Secretaria i claustre</strong>
+<span style="color: #575271; font-size: 16px">Acompanyem Secretaria en la càrrega inicial i fem una sessió de formació per al claustre.</span>
+</li>
+<li style="background: #FFFFFF; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 34px; color: #6D28D9">4</span>
+<strong style="font-size: 19px">En marxa</strong>
+<span style="color: #575271; font-size: 16px">El primer trimestre fem un seguiment de prop. Després, suport quan el necessiteu.</span>
+</li>
+</ol>
+</div>
+</section>
+
+<section id="preu" aria-labelledby="preutitol" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h2 id="preutitol" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; letter-spacing: -0.8px">Un servei anual, tot inclòs</h2>
+<p style="margin: 0; color: #575271">Sense instal·lacions ni equips. Notia funciona al navegador i nosaltres ens ocupem de l'allotjament, la seguretat i les actualitzacions.</p>
+</div>
+<div style="background: #FFFFFF; border: 2px solid #6D28D9; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 17px; color: #6D28D9">Servei per centre</p>
+<p style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 44px; line-height: 1">[PREU] <span style="font-size: 20px; font-weight: 600; color: #575271">/ curs</span></p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 17px">
+<li>Entorn propi del centre i dades a la Unió Europea</li>
+<li>Totes les funcionalitats i actualitzacions</li>
+<li>Ajuda de la IA per als comentaris</li>
+<li>Formació inicial del claustre</li>
+<li>Suport per correu</li>
+</ul>
+<a href="contacte.html" style="background: #6D28D9; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px; text-align: center">Demana pressupost</a>
+</div>
+</section>
+
+<section id="preguntes" aria-labelledby="faq" style="background: #FFFFFF; border-top: 1px solid #E7E4F0">
+<div style="max-width: 880px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px">
+<h2 id="faq" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; letter-spacing: -0.8px">Preguntes que ens fan els centres</h2>
+<details style="border-bottom: 1px solid #E7E4F0; padding-bottom: 18px">
+<summary style="cursor: pointer; font-weight: 600; font-size: 19px">Cal instal·lar alguna cosa?</summary>
+<p style="margin: 12px 0 0; color: #575271">No. Notia funciona al navegador, en ordinadors, tauletes i mòbils. Només cal el compte de Google del centre.</p>
+</details>
+<details style="border-bottom: 1px solid #E7E4F0; padding-bottom: 18px">
+<summary style="cursor: pointer; font-weight: 600; font-size: 19px">Qui és el responsable de les dades?</summary>
+<p style="margin: 12px 0 0; color: #575271">El centre. Nosaltres actuem com a encarregats del tractament, amb el contracte corresponent, i no podem llegir les dades identificatives perquè estan xifrades amb la clau del vostre centre.</p>
+</details>
+<details style="border-bottom: 1px solid #E7E4F0; padding-bottom: 18px">
+<summary style="cursor: pointer; font-weight: 600; font-size: 19px">La IA escriu els comentaris pel docent?</summary>
+<p style="margin: 12px 0 0; color: #575271">No. Proposa un esborrany a partir dels ítems que tria el docent, sense rebre el nom real de l'alumne. El docent el revisa, el modifica i decideix el text final.</p>
+</details>
+<details style="border-bottom: 1px solid #E7E4F0; padding-bottom: 18px">
+<summary style="cursor: pointer; font-weight: 600; font-size: 19px">Què passa amb les dades si deixem el servei?</summary>
+<p style="margin: 12px 0 0; color: #575271">Us en lliurem una còpia completa i, un cop confirmada, s'esborra el vostre entorn. [Concretar el termini i el format.]</p>
+</details>
+<details style="border-bottom: 1px solid #E7E4F0; padding-bottom: 18px">
+<summary style="cursor: pointer; font-weight: 600; font-size: 19px">Podem provar-lo abans de contractar-lo?</summary>
+<p style="margin: 12px 0 0; color: #575271">Sí. Us oferim una demostració i un entorn de prova amb dades fictícies perquè el claustre el pugui veure abans de decidir.</p>
+</details>
+</div>
+</section>
+
+<section aria-labelledby="final" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<div style="background: #6D28D9; color: #FFFFFF; border-radius: 24px; padding: 56px 40px; display: flex; flex-direction: column; gap: 18px; align-items: flex-start">
+<h2 id="final" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 38px; line-height: 1.1; letter-spacing: -0.6px">Parlem de com treballa el vostre centre</h2>
+<p style="margin: 0; color: #EDE7FC; max-width: 640px">Expliqueu-nos com feu ara l'avaluació i us ensenyarem què canviaria amb Notia.</p>
+<a href="contacte.html" style="background: #FFFFFF; color: #4C1D95; text-decoration: none; font-weight: 700; padding: 15px 24px; border-radius: 12px">Demana una demostració</a>
+</div>
+</section>
+</main>
+
+<footer style="border-top: 1px solid #E7E4F0; background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; font-size: 15px; color: #575271">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<strong style="font-family: 'Outfit', sans-serif; font-size: 20px; color: #1B1730">Notia</strong>
+<span>[correu de contacte]</span>
+<span>© [any] [titular del servei]</span>
+</div>
+<nav aria-label="Informació legal" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
+<a href="legal.html#avis">Avís legal</a>
+<a href="legal.html#privacitat">Política de privacitat</a>
+<a href="legal.html#condicions">Condicions del servei</a>
+<a href="legal.html#cookies">Galetes</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>
